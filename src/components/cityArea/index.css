@@ -1,0 +1,18 @@
+.cityArea {
+  position: absolute;
+  width: 30%;
+}
+.scrollRankingBoard {
+  height: 500px !important;
+  width: 100% !important;
+  position: absolute !important;
+  right: 0;
+  margin-top: 20px;
+}
+.scrollRankingBoard .title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 700;
+  font-size: 20px;
+}

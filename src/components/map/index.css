@@ -1,0 +1,27 @@
+
+.mapCharts {
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mapChart {
+  margin-top: 20px;
+  height: 400px;
+}
+.circle_allow{
+	position: absolute;
+	top: 54%;
+	left: 50%;
+	width: 50vh;
+	height: 50vh;
+	min-width: 280px;
+	min-height: 280px;
+	transform: translate(-50%,-50%);
+	background: url("../../assets/jt.png") center no-repeat;
+	background-size: 50vh 50vh;
+	animation: retate2 10s linear infinite;
+}
+@keyframes retate2{
+	100%{transform: translate(-50%, -50%) rotate(-360deg);}
+}

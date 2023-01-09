@@ -1,38 +1,107 @@
 .App {
-  text-align: center;
+  background-color: #001529;
+  color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chart_head {
+  display: flex;
+  justify-content: space-around;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chart_head .ch_title {
+  float: left;
+  color: #fff;
+  font-weight: 600;
+  padding-top: 10px;
+  width: 200px;
+  font-size: 20px;
+  text-align: left;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chart_head .ch_time {
+  padding-top: 10px;
+  width: 200px;
+  text-align: right;
+}
+.chart_head .ch_dv {
+  display: flex;
+}
+.chart_head .ch_dv .dv-decoration-5 {
+  margin-top: 17px;
+}
+.chart_main {
+  margin-top: 20px;
+  /* height: 200px; */
+}
+.chart_main .ch_main_content {
+  display: flex;
+  flex: 1;
+}
+.chart_main .ch_main_content .ch_item {
+  height: 50px;
+  width: 20%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 16px;
 }
-
-.App-link {
-  color: #61dafb;
+.unit {
+  font-size: 14px;
+  color: #e8dada;
+  margin-left: 8px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.c_a {
+  font-weight: 700;
+  font-size: 24px;
+  color: rgb(176, 20, 20)
+}
+.c_b {
+  font-weight: 700;
+  font-size: 24px;
+  color: rgb(32, 42, 186)
+}
+.c_c {
+  font-weight: 700;
+  font-size: 24px;
+  color: rgb(45, 149, 106)
+}
+.c_d {
+  font-weight: 700;
+  font-size: 24px;
+  color: rgb(192, 57, 20)
+}
+.c_e {
+  font-weight: 700;
+  font-size: 24px;
+  color: rgb(144, 201, 40)
+}
+.DrugTypeBorder, .DrugSaleBorder {
+  height: 200px !important;
+  width: 30% !important;
+  position: absolute !important;
+  right: 0;
+  margin-top: 20px;
+}
+.DrugSaleBorder {
+  top: 400px;
+}
+.DrugTypeBorder .title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 700;
+  font-size: 20px;
+}
+.DrugSaleBorder .title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 700;
+  font-size: 20px;
+}
+.dv-decoration-1{
+  position: absolute;
+  left: 55%;
+  margin-top: 30px;
 }
